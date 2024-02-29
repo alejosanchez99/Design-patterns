@@ -1,14 +1,14 @@
-﻿using FactoryMethod.Products;
-
-namespace FactoryMethod.Factories
+﻿namespace FactoryMethod.Factories
 {
+    using FactoryMethod.Products;
+
     public abstract class VehicleFactory
     {
         public abstract IVehicle CreateVehicule();
 
         public IVehicle OrderVehicule()
         {
-            IVehicle vehicle = CreateVehicule();
+            IVehicle vehicle = this.CreateVehicule();
 
             vehicle.Start();
             vehicle.Drive();

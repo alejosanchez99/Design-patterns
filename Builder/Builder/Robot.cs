@@ -1,10 +1,6 @@
 ﻿namespace Builder.Example1
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
 
     /// <summary>
     /// Product
@@ -19,10 +15,10 @@
         public void DisplayRobotInfo()
         {
             Console.WriteLine("Robot Info:");
-            Console.WriteLine($"Head: {Head}");
-            Console.WriteLine($"Body: {Body}");
-            Console.WriteLine($"Arms: {Arms}");
-            Console.WriteLine($"Legs: {Legs}");
+            Console.WriteLine($"Head: {this.Head}");
+            Console.WriteLine($"Body: {this.Body}");
+            Console.WriteLine($"Arms: {this.Arms}");
+            Console.WriteLine($"Legs: {this.Legs}");
         }
     }
 }

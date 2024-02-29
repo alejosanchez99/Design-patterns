@@ -16,7 +16,7 @@
 
         public void ProcessPayment(decimal amount)
         {
-            string messageProcessPayment = paymentGateway.ProcessPayment(amount) ? "successful" : "failed";
+            string messageProcessPayment = this.paymentGateway.ProcessPayment(amount) ? "successful" : "failed";
 
             this.transactionLogger.LogTransaction($"Payment of {amount}, was {messageProcessPayment}");
         }

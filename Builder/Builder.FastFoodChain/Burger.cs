@@ -1,11 +1,7 @@
 ﻿namespace Builder.FastFoodChain
 {
     using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    
+
     public class Burger
     {
         public string Bread { get; set; }
@@ -18,12 +14,12 @@
 
         public void DisplayInformation()
         {
-            Console.WriteLine($"Bread: {Bread}");
-            Console.WriteLine($"Meat: {Meat}");
-            Console.WriteLine($"Cheese: {Cheese}");
-            Console.WriteLine($"Lettuce: {Lettuce}");
-            Console.WriteLine($"Dressing: {Dressing}");
-            Console.WriteLine($"Tomatoe: {Tomato}");
+            Console.WriteLine($"Bread: {this.Bread}");
+            Console.WriteLine($"Meat: {this.Meat}");
+            Console.WriteLine($"Cheese: {this.Cheese}");
+            Console.WriteLine($"Lettuce: {this.Lettuce}");
+            Console.WriteLine($"Dressing: {this.Dressing}");
+            Console.WriteLine($"Tomatoe: {this.Tomato}");
         }
     }
 }

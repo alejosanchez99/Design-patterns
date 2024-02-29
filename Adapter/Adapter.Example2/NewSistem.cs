@@ -11,13 +11,13 @@
 
         public void SaveDate(string data)
         {
-            database.Add(data);
+            this.database.Add(data);
             Console.WriteLine("Data saved in the new system.");
         }
 
         public void LoadData()
         {
-            string data = database.Retrieve();
+            string data = this.database.Retrieve();
             Console.WriteLine("Data loaded in the new system: " + data);
         }
     }

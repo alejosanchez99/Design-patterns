@@ -9,7 +9,7 @@
 
         private EventLogger()
         {
-            eventLogs = new List<string>();
+            this.eventLogs = new List<string>();
         }
 
         public static EventLogger GetInstance()
@@ -23,12 +23,12 @@
         public void LogEvent(string eventMessage)
         {
             string timeStamp = DateTime.UtcNow.ToString("yyyy-MM-dd HH:mm:ss.fff");
-            eventLogs.Add($"{timeStamp}: {eventMessage}");
+            this.eventLogs.Add($"{timeStamp}: {eventMessage}");
         }
 
         public void DisplayLogs()
         {
-            foreach (string log in eventLogs)
+            foreach (string log in this.eventLogs)
             {
                 Console.WriteLine(log);
             }
