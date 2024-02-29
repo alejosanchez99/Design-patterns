@@ -1,11 +1,5 @@
 ﻿namespace Decorator.Example2
 {
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
     public class BaconDecorator : BurgerDecorator
     {
         public BaconDecorator(IBurger burger) : base(burger) { }
